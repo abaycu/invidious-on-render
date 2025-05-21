@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: invidious
+    env: docker
+    plan: free
+    autoDeploy: true
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: INVIDIOUS_CONFIG
+        value: |
+          db:
+            dbname: invidious
+            user: kemal
+            password: kemal
+            host: localhost
+            port: 5432
+          check_tables: true
+          hmac_key: "XjSgKp7YmU2bWa9QcFdE3VrNLtz4AoJBvxRiH68dPY"
