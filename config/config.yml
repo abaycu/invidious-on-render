@@ -1,1 +1,18 @@
+db:
+  dbname: invidious
+  user: kemal
+  password: kemal
+  host: localhost
+  port: 5432
 
+check_tables: true
+hmac_key: XjSgKp7YmU2bWa9QcFdE3VrNLtz4AoJBvxRiH68dPY
+log_level: Info
+full_refresh: true
+channel_threads: 1
+feed_threads: 1
+use_pubsub_feeds: false
+enable_user_notifications: false
+statistics_enabled: false
+external_port: 3000
+domain: ""
